@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  max-width: 100vw;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: overline;
+  color: gold;
+}
+a:hover {
+  color: goldenrod;
+  transform: translateY(-10px);
+  text-decoration: underline;
+}
+header {
+  height: 10vh;
+}
+main {
+  height: 80vh;
+  gap: 10vw;
+}
+img {
+  border-radius: 50%;
+  padding: 20px;
+  max-width: 8%;
+  cursor: pointer;
+}
+i {
+  cursor: pointer;
+}
+.animated {
+  animation: bounce 0.4s 3 alternate;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px) scale(1.1);
+  }
+  0%,
+  100% {
+    transform: translateY(10px) scaleZ(1.3);
+  }
+}
+footer {
+  height: 10vh;
+  top: 89vh;
+  min-width: 100vw;
+  background: rgb(19, 17, 17);
+  color: whitesmoke;
+  text-align: center;
+}
+.light {
+  background: linear-gradient(to bottom, lightblue, whitesmoke);
+  color: black;
+}
+.dark {
+  background: linear-gradient(to bottom, black, darkblue, blue, lightblue);
+  color: whitesmoke;
+}

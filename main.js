@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       playerImg.forEach(element => {
         //add animated to all
         element.classList.add('animated')
-        element.style.background = 'lightslategrey'
+        element.style.background = 'blue'
       })
       setTimeout(() => {
         //Here is the user's input
@@ -31,6 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
           .split('/')
           .pop()
         //display the choices
+        compImg.forEach(element => {
+          element.style.background = 'white'
+          if (element.getAttribute('alt').includes(comp)) {
+            element.style = 'background: blue;'
+            element.style.color = 'white'
+          }
+        })
         userChoice.textContent = `You chose ${player}!!!`
         compChoice.textContent = `I choose ${comp}!!!`
         //insert the result
